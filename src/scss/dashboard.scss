@@ -1,15 +1,14 @@
 @import "variables";
 @import "mixins";
 
-
-.db{
+.db {
 
   &__header {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    height: $bd-header-height;
+    height: $db-header-height;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +18,7 @@
   }
 
   &__new {
-    margin-top: $bd-header-height;
+    margin-top: $db-header-height;
     padding: 1.5rem;
     background: #dadce0;
   }
@@ -40,12 +39,12 @@
 
     &:hover {
       cursor: pointer;
-      color:green;
+      color: green;
       border-color: green;
     }
   }
 
-  &__viev {
+  &__view {
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -91,4 +90,5 @@
       }
     }
   }
+
 }

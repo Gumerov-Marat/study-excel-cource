@@ -1,12 +1,13 @@
 @import "variables";
 @import "mixins";
 
-.excel__formula{
+
+.excel__formula {
   position: absolute;
   left: 0;
   right: 0;
-  top: $header-height+$toolbar-height;
-  height: $formila-height;
+  top: $header-height + $toolbar-height;
+  height: $formula-height;
   display: flex;
   align-items: center;
   border-bottom: 1px solid $border-color;
@@ -16,7 +17,7 @@
     font-style: italic;
     text-align: center;
     border-right: 1px solid $border-color;
-    min-width: $info-cell-widht;
+    min-width: $info-cell-width;
   }
 
   .input {
