@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
 
-
   & .input {
     margin: 0;
     padding: 2px 7px;
@@ -25,16 +24,16 @@
     outline: none;
 
     &:hover {
-       border: 1px solid $border-color;
-     }
+      border: 1px solid $border-color;
+    }
 
     &:focus {
       border: 2px solid #1a73e8;
     }
-
   }
 
-  &.button {
+  .button {
     @include button(red);
   }
+
 }
