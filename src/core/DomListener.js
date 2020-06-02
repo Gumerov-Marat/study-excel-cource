@@ -1,4 +1,8 @@
 export class DomListener {
-
-// eslint-disable-next-line eol-last
+  constructor($root) {
+    if (!$root) {
+      throw new Error('No $root provider for DomListener!')
+    }
+    this.$root = $root
+  }
 }
