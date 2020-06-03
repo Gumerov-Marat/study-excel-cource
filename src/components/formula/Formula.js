@@ -1,4 +1,4 @@
-import {ExcelComponent} from '@core/ExcelComponent';
+import {ExcelComponent} from '@core/ExcelComponent'
 
 export class Formula extends ExcelComponent {
   static className = 'excel__formula'
@@ -6,14 +6,14 @@ export class Formula extends ExcelComponent {
   constructor($root) {
     super($root, {
       name: 'Formula',
-      Listeners: ['input']
+      listeners: ['input']
     })
   }
 
   toHTML() {
     return `
-     <div class = "info">fx</div>
-     <div class = "input" contenteditable spellcheck = "false"> </div>
+      <div class="info">fx</div>
+      <div class="input" contenteditable spellcheck="false"></div>
     `
   }
 

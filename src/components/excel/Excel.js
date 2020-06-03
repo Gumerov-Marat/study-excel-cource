@@ -8,7 +8,6 @@ export class Excel {
 
   getRoot() {
     const $root = $.create('div', 'excel')
-    // eslint-disable-next-line no-trailing-spaces
 
     this.components = this.components.map(Component => {
       const $el = $.create('div', Component.className)
@@ -23,6 +22,7 @@ export class Excel {
 
   render() {
     this.$el.append(this.getRoot())
-    this.components.forEach(component => component.init());
+
+    this.components.forEach(component => component.init())
   }
 }
