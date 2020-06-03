@@ -19,6 +19,9 @@ class Dom {
     return this
   }
 
+  on() {
+  }
+
   append(node) {
     if (node instanceof Dom) {
       node = node.$el
