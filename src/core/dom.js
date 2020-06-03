@@ -1,9 +1,8 @@
 class Dom {
   constructor(selector) {
-    // #app
     this.$el = typeof selector === 'string'
-    ? document.querySelector(selector)
-    : selector
+      ? document.querySelector(selector)
+      : selector
   }
 
   html(html) {
@@ -20,6 +19,7 @@ class Dom {
   }
 
   on() {
+
   }
 
   append(node) {
@@ -32,10 +32,10 @@ class Dom {
     } else {
       this.$el.appendChild(node)
     }
+
     return this
   }
 }
-
 
 // event.target
 export function $(selector) {
